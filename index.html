@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<script src="jquery-1.6.2.js"></script>
+<script>
+// shim layer with setTimeout fallback
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          window.oRequestAnimationFrame      ||
+          window.msRequestAnimationFrame     ||
+          function(/* function */ callback, /* DOMElement */ element){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+</script>
+<script src="animation.js"></script>
+<script src="circle.js"></script>
+<style>
+html, body { background: #fff}
+#canvas {
+
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+</style>
+<script>
+
+</script>
+</head> 
+<body>
+<canvas id="canvas" width="100" height="100"></canvas>
+</body> 
+</html>
