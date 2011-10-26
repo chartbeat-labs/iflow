@@ -1,24 +1,17 @@
 <!DOCTYPE html> 
 <html> 
 <head>
-<script src="jquery-1.6.2.js"></script>
-<script>
-// shim layer with setTimeout fallback
-window.requestAnimFrame = (function(){
-  return  window.requestAnimationFrame       ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame    ||
-          window.oRequestAnimationFrame      ||
-          window.msRequestAnimationFrame     ||
-          function(/* function */ callback, /* DOMElement */ element){
-            window.setTimeout(callback, 1000 / 60);
-          };
-})();
-</script>
+<script src="lib/jquery-1.6.2.js"></script>
+
+<script src="config.js"></script>
+
 <script src="animation.js"></script>
+<script src="transition.js"></script>
 <script src="circle.js"></script>
+<script src="iflow.js"></script>
+
 <style>
-html, body { background: #fff}
+html, body { background: white}
 #canvas {
 
   position: absolute;
