@@ -1,6 +1,6 @@
 $(document).ready(init);
 
-var DASH_API = 'http://chartbeat.com/api/dash/?apikey=%apikey' +
+var DASH_API = '//api.chartbeat.com/dash/?apikey=%apikey' +
                '&host=%host&v=2&newsbeat=1&types=1&sort_by&referrer&count=10';
 
 var centeredCircle;
